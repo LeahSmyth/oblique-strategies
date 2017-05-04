@@ -11,7 +11,10 @@
 </head>
 <body>
     
-    <img class="room" src="images/chalk.svg"/>
+    <img class="room" src="images/chalk.png"/>
+    
+
+    <form><input type=button value="Refresh" onClick="history.go()"></form> 
     
 <div class="container">
 	<div class="card fade-in">
@@ -144,6 +147,12 @@
 		document.getElementById("randomStrategy").innerHTML = pickAStrategy();
 		</script>		
 	</div> <!-- /card -->
+    
+<div class="contain">    
+   <div input type="button" value="Refresh Page" onclick="window.location.reload()" class="refresh">
+    <img src="images/refresh.png" class="refresh-button"></div>
+    </div>
+    
 </div> <!-- /container -->
 </body>
 </html>

@@ -1,42 +1,76 @@
+*{
+    padding:0em;
+	margin:0;
+	font-size:100%;
+	line-height:1em;
+	}
+
 body {
+    background: rgba(198,198,195,0.9);
 	text-transform:uppercase;
 	font:4em "Avenir";
     font-family:'Amatic SC', cursive;
     max-width:100%;
+    margin:0 auto;
+    padding:0;
 	}
 
 .room{
     width:100%;
     height:100%;
+    position:absolute;
+    }
+
+.room img{
+    width:100%;
+    height:auto;
+    }
+
+.refresh-button{
     position:fixed;
+    left:85.5%;
+    top:55.5%;
+    width:6%;
+    }
+
+.contain{
+    display:flex;
 }
-	/* The container that the card is centred inside. */
-	.container {
-	position: fixed !important;
-	position: absolute;
+
+.refresh-button:hover{
+    opacity:0.8;
+    transition:1s; 
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
+.container {
+	position:fixed !important;
+	position:absolute;
 	top:0;
 	right:0;
 	bottom:0;
 	left:0;
-	display: flex;
+	display:flex;
 	display: -webkit-flex;
 	justify-content: center;
-    padding-left:22%;
-    padding-right:22%;
-    padding-top:11%;
+    padding-left:23%;
+    padding-right:23%;
+    padding-top:12%;
 	}
 	
-	/* This is the card. */
-	.card {
+.card {
 	padding:10px;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	-webkit-perspective: 1000; /* NEW */
 	}
-	/* Padding so the type doesn't hit the edge of the card. */
 	
-	p {
+p {
     color:#FFFFFF;
 	padding:10px;
 	}
@@ -46,7 +80,7 @@ body {
 	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-	.fade-in {
+.fade-in {
 	opacity:0;  /* Make things invisible upon start */
 	-webkit-animation:fadeIn ease-in 1;  /* Call the keyframe named fadeIn, use animattion ease-in and repeat it only 1 time. */
 	-moz-animation:fadeIn ease-in 1;
